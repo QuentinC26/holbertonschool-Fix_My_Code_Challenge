@@ -18,10 +18,12 @@ const size = parseInt(process.argv[2])
 
 if (isNaN(size)) {
   console.error("size must be integer")
+  process.exit(1)
 }
 
 if (size < 1) {
   console.error("size must be > 0")
+  process.exit(1)
 }
 
 for (let i = 0 ; i < size ; i ++) {
