@@ -16,7 +16,7 @@ if (process.argv.length <= 2) {
 
 const size = parseInt(process.argv[2])
 
-if (size !== Number) {
+if (isNaN(size)) {
   console.error("size must be integer")
 }
 
