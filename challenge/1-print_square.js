@@ -8,19 +8,19 @@
 
 
 if (process.argv.length <= 2) {
-    process.stderr.write("Missing argument\n");
+    process.stderr.write("Missing size\n");
     process.exit(1)
 }
 
 const size = parseInt(process.argv[2])
 
 if (isNaN(size)) {
-  process.stderr.write("size must be integer")
+  process.stderr.write("size must be integer\n")
   process.exit(1)
 }
 
 if (size < 1) {
-  process.stderr.write("size must be > 0")
+  process.stderr.write("size must be > 0\n")
   process.exit(1)
 }
 
