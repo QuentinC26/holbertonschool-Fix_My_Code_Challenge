@@ -12,6 +12,9 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
+/* 
+la chaîne soit interprétée en base décimale (base 10), c’est-à-dire le système numérique habituel.
+*/
 const size = parseInt(process.argv[2], 10)
 
 if (isNaN(size)) {
